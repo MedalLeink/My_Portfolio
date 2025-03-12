@@ -75,6 +75,13 @@ nav, ul, li, a:hover {
 
 /* Profile Picture */
 
+.about_container{
+    width: 100%;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+
+}
 #about {
     color: #fff;
     font-size: 18px;
@@ -83,26 +90,48 @@ nav, ul, li, a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 50px;
-    display:grid;
-    /* padding-left: 20px; */
+    margin-top: 80px;
+    /* display: grid; */
+    padding: 0px 100px 0px 100px; 
 }
 
-#about h2{
+.about_container h2{
     color: #fff;
     font-size: 44px;
 }
 
+.about_me {
+    width: 95%;
+    margin-top: 100px;
+    /* width: 50vw; */
+    text-align: justify;
+    padding-left: -50px;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about_me a{
+    margin-top: 30px;
+    /* text-align: right; */
+    color: #58a6ff;
+    font-size: 24px;
+    float: right;
+    margin-right: 0px;
+}
+
+.about_me a:hover{
+    color: #4a90e2;
+}
+
 .profile-pic {
-    width: 350px;
+    width: 300px;
     /* height: 200px; */
     /* border-radius: 50%; */
     /* margin: 15px 0; */
     /* border: 3px solid #58a6ff; */
     float: left;
-    margin: 0;
-    margin-left: -150px;
-    margin-top: -100px;
+    margin: -50px 70px 70px 100px;
     border-radius: 10%;
     /* object-fit: cover; */
 }
@@ -120,7 +149,7 @@ nav, ul, li, a:hover {
 
 .project {
     background: #161b22;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 8px;
     width: 300px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -132,7 +161,7 @@ nav, ul, li, a:hover {
     color: #fff;
     font-size: 44px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: -5px;
     margin-bottom: 70px;
 }
 
@@ -170,6 +199,7 @@ fieldset {
 
 .skills-list li:hover {
     transform: scale(1.08);
+    background-color: #4a90e2;
 }
 
 #skills h2 {
@@ -240,13 +270,21 @@ button:hover {
 }
 
 /* Social Links */
-.social-links a {
+.social-links {
     color: #fff;
     font-size: 1.5rem;
     margin: 10px;
     transition: 0.3s;
-    /* justify-content: left;
-    display: flex; */
+    justify-content: center;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.social-links a {
+    font-size: 30px;
 }
 
 .social-links a:hover {
